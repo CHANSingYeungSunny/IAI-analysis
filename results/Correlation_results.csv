@@ -1,0 +1,8 @@
+Comparison,Correlation,p-value,N
+IAI vs FluNet AH3 — Pearson,-0.22879327929183244,1.542799444653202e-05,350
+IAI vs FluNet AH3 — Spearman,-0.4312023211241421,2.789480967387311e-17,350
+IAI vs H3N2 VE — children (6m–17y) | NVSN (Outpatient),-0.4681957200141839,51.0,26
+IAI vs H3N2 VE — children (6m–17y) | US Flu VE (Outpatient),-0.4681957200141839,-5.0,26
+IAI vs H3N2 VE — children (6m–17y) | NVSN (Inpatient),-0.4681957200141839,39.0,26
+IAI vs H3N2 VE — All adults (>=18y) | US Flu VE (Outpatient),-0.4681957200141839,30.0,26
+IAI vs H3N2 VE — All adults (>=18y) | IVY (Inpatient),-0.4681957200141839,19.0,26

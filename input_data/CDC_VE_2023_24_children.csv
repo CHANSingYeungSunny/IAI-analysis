@@ -1,0 +1,27 @@
+Network (Setting),Influenza positive N vaccinated / Total (%),Influenza negative N vaccinated / Total (%),VE (95% CI)*
+Any Influenza,Any Influenza,Any Influenza,Any Influenza
+NVSN** (Outpatient***),304/1309 (23%),2080/5115 (41%),56 (49–62)
+US Flu VE (Outpatient),69/636 (11%),364/1344 (27%),65 (52–74)
+VISION (Outpatient),2695/17493 (15%),17033/53028 (32%),58 (56–60)
+NVSN (Inpatient),82/309 (27%),1341/2661 (50%),64 (52–72)
+VISION (Inpatient),63/340 (19%),1207/3139 (38%),58 (44–69)
+Any Influenza A,Any Influenza A,Any Influenza A,Any Influenza A
+NVSN (Outpatient),184/707 (26%),2080/5115 (41%),50 (39–58)
+US Flu VE (Outpatient),49/346 (14%),364/1344 (27%),48 (25–64)
+VISION (Outpatient),2148/11536 (19%),17033/53028 (32%),49 (46–51)
+NVSN (Inpatient),60/191 (31%),1341/2661 (50%),51 (33–65)
+VISION (Inpatient),55/241 (23%),1207/3139 (38%),44 (23–60)
+Influenza A(H1N1)pdm09,Influenza A(H1N1)pdm09,Influenza A(H1N1)pdm09,Influenza A(H1N1)pdm09
+NVSN (Outpatient),110/421 (26%),2080/5115 (41%),47 (33–59)
+US Flu VE (Outpatient),25/244 (10%),364/1344 (27%),63 (43–78)
+NVSN (Inpatient),41/130 (31%),1341/2661 (50%),51 (28–66)
+Influenza A(H3N2),Influenza A(H3N2),Influenza A(H3N2),Influenza A(H3N2)
+NVSN (Outpatient),62/224 (28%),2080/5115 (41%),51 (32–64)
+US Flu VE (Outpatient),20/68 (29),364/1344 (27%),-5 (-90–43)
+NVSN (Inpatient),13/35 (37%),1341/2661 (50%),39 (-18–68)
+Influenza B,Influenza B,Influenza B,Influenza B
+NVSN (Outpatient),120/614 (20%),2080/5115 (41%),64 (55–71)
+US Flu VE (Outpatient),21/304 (7%),364/1344 (27%),79 (67–88)
+VISION (Outpatient),557/6029 (9%),17033/53028 (32%),74 (72–77)
+NVSN (Inpatient),22/121 (18%),1341/2661 (50%),78 (65–86)
+VISION (Inpatient),8/104 (8%),1207/3139 (38%),85 (72–93)

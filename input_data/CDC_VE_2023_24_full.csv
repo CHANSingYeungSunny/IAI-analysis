@@ -1,0 +1,76 @@
+Network (Setting),Influenza positive N vaccinated / Total (%),Influenza negative N vaccinated / Total (%),VE (95% CI)*,age_group
+Any Influenza,Any Influenza,Any Influenza,Any Influenza,children (6m–17y)
+NVSN** (Outpatient***),304/1309 (23%),2080/5115 (41%),56 (49–62),children (6m–17y)
+US Flu VE (Outpatient),69/636 (11%),364/1344 (27%),65 (52–74),children (6m–17y)
+VISION (Outpatient),2695/17493 (15%),17033/53028 (32%),58 (56–60),children (6m–17y)
+NVSN (Inpatient),82/309 (27%),1341/2661 (50%),64 (52–72),children (6m–17y)
+VISION (Inpatient),63/340 (19%),1207/3139 (38%),58 (44–69),children (6m–17y)
+Any Influenza A,Any Influenza A,Any Influenza A,Any Influenza A,children (6m–17y)
+NVSN (Outpatient),184/707 (26%),2080/5115 (41%),50 (39–58),children (6m–17y)
+US Flu VE (Outpatient),49/346 (14%),364/1344 (27%),48 (25–64),children (6m–17y)
+VISION (Outpatient),2148/11536 (19%),17033/53028 (32%),49 (46–51),children (6m–17y)
+NVSN (Inpatient),60/191 (31%),1341/2661 (50%),51 (33–65),children (6m–17y)
+VISION (Inpatient),55/241 (23%),1207/3139 (38%),44 (23–60),children (6m–17y)
+Influenza A(H1N1)pdm09,Influenza A(H1N1)pdm09,Influenza A(H1N1)pdm09,Influenza A(H1N1)pdm09,children (6m–17y)
+NVSN (Outpatient),110/421 (26%),2080/5115 (41%),47 (33–59),children (6m–17y)
+US Flu VE (Outpatient),25/244 (10%),364/1344 (27%),63 (43–78),children (6m–17y)
+NVSN (Inpatient),41/130 (31%),1341/2661 (50%),51 (28–66),children (6m–17y)
+Influenza A(H3N2),Influenza A(H3N2),Influenza A(H3N2),Influenza A(H3N2),children (6m–17y)
+NVSN (Outpatient),62/224 (28%),2080/5115 (41%),51 (32–64),children (6m–17y)
+US Flu VE (Outpatient),20/68 (29),364/1344 (27%),-5 (-90–43),children (6m–17y)
+NVSN (Inpatient),13/35 (37%),1341/2661 (50%),39 (-18–68),children (6m–17y)
+Influenza B,Influenza B,Influenza B,Influenza B,children (6m–17y)
+NVSN (Outpatient),120/614 (20%),2080/5115 (41%),64 (55–71),children (6m–17y)
+US Flu VE (Outpatient),21/304 (7%),364/1344 (27%),79 (67–88),children (6m–17y)
+VISION (Outpatient),557/6029 (9%),17033/53028 (32%),74 (72–77),children (6m–17y)
+NVSN (Inpatient),22/121 (18%),1341/2661 (50%),78 (65–86),children (6m–17y)
+VISION (Inpatient),8/104 (8%),1207/3139 (38%),85 (72–93),children (6m–17y)
+All adults (aged ≥18 years),All adults (aged ≥18 years),All adults (aged ≥18 years),All adults (aged ≥18 years),"adults (≥18y, with 18–64 & ≥65 stratification)"
+Any Influenza,Any Influenza,Any Influenza,Any Influenza,"adults (≥18y, with 18–64 & ≥65 stratification)"
+US Flu VE (Outpatient**),370/1144 (32%),1629/3505 (46%),35 (24–45),"adults (≥18y, with 18–64 & ≥65 stratification)"
+VISION (Outpatient),9622/40893 (24%),67366/159885 (42%),47 (46 –49),"adults (≥18y, with 18–64 & ≥65 stratification)"
+IVY (Inpatient),391/1170 (33%),2779/6520 (43%),40 (32–54),"adults (≥18y, with 18–64 & ≥65 stratification)"
+VISION (Inpatient),2010/5721 (35%),30445/61107 (50%),39 (35–43),"adults (≥18y, with 18–64 & ≥65 stratification)"
+Any Influenza A,Any Influenza A,Any Influenza A,Any Influenza A,"adults (≥18y, with 18–64 & ≥65 stratification)"
+US Flu VE (Outpatient),370/1144 (32%),1629/3505 (46%),35 (24–45),"adults (≥18y, with 18–64 & ≥65 stratification)"
+VISION (Outpatient),8861/31803 (28%),67366/159885 (42%),41 (39–42),"adults (≥18y, with 18–64 & ≥65 stratification)"
+IVY (Inpatient),266/722 (37%),2779/6520 (43%),31 (18–42),"adults (≥18y, with 18–64 & ≥65 stratification)"
+VISION (Inpatient),1931/5177 (37%),30445/61107 (50%),37 (32–41),"adults (≥18y, with 18–64 & ≥65 stratification)"
+Influenza A(H1N1)pdm09,Influenza A(H1N1)pdm09,Influenza A(H1N1)pdm09,Influenza A(H1N1)pdm09,"adults (≥18y, with 18–64 & ≥65 stratification)"
+US Flu VE (Outpatient),223/562 (40%),1629/3505 (46%),22 (5–37),"adults (≥18y, with 18–64 & ≥65 stratification)"
+IVY (Inpatient),165/465 (34%),2779/6520 (43%),36 (21–48),"adults (≥18y, with 18–64 & ≥65 stratification)"
+Influenza A(H3N2),Influenza A(H3N2),Influenza A(H3N2),Influenza A(H3N2),"adults (≥18y, with 18–64 & ≥65 stratification)"
+US Flu VE (Outpatient),78/261 (30%),1629/3505 (46%),30 (5–49),"adults (≥18y, with 18–64 & ≥65 stratification)"
+IVY (Inpatient),92/228 (40%),2779/6520 (43%),19 (-8–39),"adults (≥18y, with 18–64 & ≥65 stratification)"
+Influenza B,Influenza B,Influenza B,Influenza B,"adults (≥18y, with 18–64 & ≥65 stratification)"
+US Flu VE (Outpatient),41/263 (16%),1629/3505 (46%),70 (58–80),"adults (≥18y, with 18–64 & ≥65 stratification)"
+VISION (Outpatient),770/9161 (8%),67366/159885 (42%),75 (72–77),"adults (≥18y, with 18–64 & ≥65 stratification)"
+IVY (Inpatient),10/69 (14%),2779/6520 (39%),—,"adults (≥18y, with 18–64 & ≥65 stratification)"
+VISION (Inpatient),88/568 (15%),30445/61107 (50%),67 (54–76),"adults (≥18y, with 18–64 & ≥65 stratification)"
+Adults (aged 18–64 years),Adults (aged 18–64 years),Adults (aged 18–64 years),Adults (aged 18–64 years),"adults (≥18y, with 18–64 & ≥65 stratification)"
+Any Influenza,Any Influenza,Any Influenza,Any Influenza,"adults (≥18y, with 18–64 & ≥65 stratification)"
+US Flu VE (Outpatient),286/1002 (29%),1060/2710 (39%),33 (20–44),"adults (≥18y, with 18–64 & ≥65 stratification)"
+VISION (Outpatient),5737/33642 (17%),31008/103738 (30%),51 (49–52),"adults (≥18y, with 18–64 & ≥65 stratification)"
+VISION (Inpatient),514/2494 (21%),6318/19594 (32%),45 (38–50),"adults (≥18y, with 18–64 & ≥65 stratification)"
+Any Influenza A,Any Influenza A,Any Influenza A,Any Influenza A,"adults (≥18y, with 18–64 & ≥65 stratification)"
+US Flu VE (Outpatient),247/751 (33%),1060/2710 (39%),17 (0–32),"adults (≥18y, with 18–64 & ≥65 stratification)"
+VISION (Outpatient),5077/24849 (20%),31008/103738 (30%),43 (41–45),"adults (≥18y, with 18–64 & ≥65 stratification)"
+VISION (Inpatient),469/2073 (23%),6318/19594 (32%),40 (33–47),"adults (≥18y, with 18–64 & ≥65 stratification)"
+Influenza B,Influenza B,Influenza B,Influenza B,"adults (≥18y, with 18–64 & ≥65 stratification)"
+US Flu VE (Outpatient),40/257 (16%),1060/2710 (39%),68 (54–78),"adults (≥18y, with 18–64 & ≥65 stratification)"
+VISION (Outpatient),664/8845 (8%),31008/103738 (30%),76 (73–78),"adults (≥18y, with 18–64 & ≥65 stratification)"
+VISION (Inpatient),51/434 (12%),6318/19594 (32%),66 (50–77),"adults (≥18y, with 18–64 & ≥65 stratification)"
+Older adults (aged ≥65 years),Older adults (aged ≥65 years),Older adults (aged ≥65 years),Older adults (aged ≥65 years),"adults (≥18y, with 18–64 & ≥65 stratification)"
+Any Influenza,Any Influenza,Any Influenza,Any Influenza,"adults (≥18y, with 18–64 & ≥65 stratification)"
+US Flu VE (Outpatient),85/142 (60%),569/795 (72%),37(5–58),"adults (≥18y, with 18–64 & ≥65 stratification)"
+VISION (Outpatient),3885/7251 (54%),36358/56147 (65%),37 (34–40),"adults (≥18y, with 18–64 & ≥65 stratification)"
+IVY (Inpatient),243/505 (48%),1762/3383 (48%),31 (16–43),"adults (≥18y, with 18–64 & ≥65 stratification)"
+VISION (Inpatient),1496/3227 (46%),24127/41513 (58%),36 (31–41),"adults (≥18y, with 18–64 & ≥65 stratification)"
+Any Influenza A,Any Influenza A,Any Influenza A,Any Influenza A,"adults (≥18y, with 18–64 & ≥65 stratification)"
+US Flu VE (Outpatient),83/136 (61%),569/795 (72%),33 (-2–56),"adults (≥18y, with 18–64 & ≥65 stratification)"
+VISION (Outpatient),3784/6954 (54%),36358/56147 (65%),36 (32–39),"adults (≥18y, with 18–64 & ≥65 stratification)"
+VISION (Inpatient),1462/3104 (47%),24127/41513 (58%),35 (29–40),"adults (≥18y, with 18–64 & ≥65 stratification)"
+Influenza B,Influenza B,Influenza B,Influenza B,"adults (≥18y, with 18–64 & ≥65 stratification)"
+US Flu VE (Outpatient),2/6 (33%),569/795 (72%),—,"adults (≥18y, with 18–64 & ≥65 stratification)"
+VISION (Outpatient),106/316 (34%),36358/56147 (65%),67 (56–75),"adults (≥18y, with 18–64 & ≥65 stratification)"
+VISION (Inpatient),37/134 (28%),24127/41513 (58%),66 (50– 78),"adults (≥18y, with 18–64 & ≥65 stratification)"

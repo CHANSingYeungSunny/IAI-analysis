@@ -1,0 +1,6 @@
+Age_Group,Network,VE_point,CI_lower,CI_upper,IAI_mean_during_season,IAI_SD_during_season,N_IAI_weeks
+Children (6m-17y),NVSN Outpatient,51,32,64,-0.4682,0.0497,26
+Children (6m-17y),US Flu VE Outpatient,-5,-90,43,-0.4682,0.0497,26
+Children (6m-17y),NVSN Inpatient,39,-18,68,-0.4682,0.0497,26
+All adults (>=18y),US Flu VE Outpatient,30,5,49,-0.4682,0.0497,26
+All adults (>=18y),IVY Inpatient,19,-8,39,-0.4682,0.0497,26

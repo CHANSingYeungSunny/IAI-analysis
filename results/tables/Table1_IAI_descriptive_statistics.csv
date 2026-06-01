@@ -1,0 +1,23 @@
+Statistic,Value
+N,350
+Date range start,2017-09-11
+Date range end,2024-05-20
+Mean,-0.3751
+Median,-0.4773
+Standard deviation,0.4571
+Minimum,-0.7561
+Maximum,3.5145
+Skewness,3.9573
+Excess Kurtosis,25.9348
+Shapiro-Wilk p,2.97e-25
+Q1,-0.6601
+Q3,-0.2254
+IQR,0.4347
+Lag-1 autocorrelation,0.9075
+Lag-4 autocorrelation,0.5628
+Lag-12 autocorrelation,0.5326
+Lag-26 autocorrelation,0.4037
+Lag-52 autocorrelation,0.177
+Linear trend slope (per week),0.000813
+Linear trend R-squared,0.1798
+Linear trend p-value,0.0007

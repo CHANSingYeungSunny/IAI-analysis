@@ -1,0 +1,238 @@
+================================================================================
+IMMUNE AGEING INDEX (IAI) — H3N2 VACCINE RESPONSE DECLINE
+Complete Results Description (all files read, all values exact)
+Generated: 2026-06-01
+================================================================================
+
+PIPELINE: IAI(t) = Zcells(t) + Zclonotype_baseline + Zgene_baseline
+  Zcells:   Per-project mean B/T cell ratio (AIFI_L1_name), 24 projects 2017-2024,
+            standardized across projects. Batch=project (limitation documented).
+  Zclonotype: Shannon entropy of VDJ clonotype diversity, 111 samples,
+              batch-corrected by receptor type, scalar population baseline.
+  Zgene:   Mean log2(TPM+1) of 500 HVGs in 1,111 GTEx blood samples,
+           batch-corrected by sequencing center, scalar population baseline.
+  24 project anchors -> linear interpolation -> 350 weekly values (Mondays).
+  Aligned with US FluNet H3N2 (2017-2024) + CDC VE 2023-24 (season-level).
+
+================================================================================
+FILE 1: IAI_time_series.csv
+================================================================================
+Path:      results/IAI_time_series.csv
+Format:    CSV, 351 rows (1 header + 350 data)
+Columns:   week_date (datetime string), IAI (float, z-score)
+
+FIRST 5 ROWS:
+  2017-09-11  -0.7561441940561946
+  2017-09-18  -0.7561441940561946
+  2017-09-25  -0.7561441940561946
+  2017-10-02  -0.7561441940561946
+  2017-10-09  -0.7561441940561946
+
+LAST 5 ROWS:
+  2024-04-22  -0.5979730399913720
+  2024-04-29  -0.6069989991094423
+  2024-05-06  -0.6160249582275128
+  2024-05-13  -0.6250509173455832
+  2024-05-20  -0.6340768764636535
+
+DESCRIPTIVE STATISTICS:
+  N                   = 350 weeks
+  Date range          = 2017-09-11 to 2024-05-20
+  Mean                = -0.3751
+  Median              = -0.4773
+  Standard deviation  =  0.4571
+  Minimum             = -0.7561  (week 0: 2017-09-11, also 68 identical weeks through 2019-03-11)
+  Maximum             =  3.5145  (week 180: 2021-02-22)
+  Skewness            = +3.9573  (extreme right skew)
+  Excess Kurtosis     = +25.9348 (extremely heavy-tailed)
+  Q1 = -0.6601   Q3 = -0.2254   IQR = 0.4347
+  Shapiro-Wilk p      = 2.97e-25  (strongly non-normal)
+  Unique values       = 272 of 350 (78% unique; 69 weeks identical at -0.7561)
+
+OUTLIERS (|z-score| > 2): 4 of 350 (1.1%), all positive, all Feb-Mar 2021:
+  2021-02-15  IAI = +1.8174  z = +4.80
+  2021-02-22  IAI = +3.5145  z = +8.51  (absolute maximum)
+  2021-03-01  IAI = +3.0446  z = +7.48
+  2021-03-08  IAI = +2.2135  z = +5.66
+
+TOP 5 IAI VALUES:
+  2021-02-22  +3.5145    2021-03-01  +3.0446    2021-03-08  +2.2135
+  2021-02-15  +1.8174    2021-01-18  +0.4334
+
+BOTTOM 5 IAI VALUES (all -0.7561, 2017-2019 baseline):
+  2017-09-11 through 2019-03-11: 69 consecutive identical weeks at -0.7561
+
+IAI BY YEAR:
+  2017: mean=-0.7561  std=0.0000  n=16   (1 project: P021)
+  2018: mean=-0.7561  std=0.0000  n=53   (no new projects)
+  2019: mean=-0.5452  std=0.1184  n=52   (P011, P009, P037_SRP226817 added)
+  2020: mean=-0.0925  std=0.2393  n=52   (6 projects added, COVID era)
+  2021: mean=+0.2673  std=0.7458  n=52   (peak volatility, 6 projects)
+  2022: mean=-0.3711  std=0.1005  n=52   (declining, P047, P012)
+  2023: mean=-0.5601  std=0.0891  n=52   (near baseline, 4 projects)
+  2024: mean=-0.5438  std=0.0547  n=21   (partial year, P027)
+
+AUTOCORRELATION:
+  Lag  1: r=0.9075   Lag  4: r=0.5628   Lag 12: r=0.5326
+  Lag 26: r=0.4037   Lag 52: r=0.1770
+  -> Genuine temporal structure, partly inflated by interpolation smoothness.
+
+LINEAR TREND:
+  Slope = +0.000813/week   R-squared = 0.1798   p = 0.0007
+  -> Significant upward trend, driven by the 2021 spike cluster.
+
+================================================================================
+FILE 2: Forecast_results.csv
+================================================================================
+Path:      results/Forecast_results.csv
+Format:    CSV, 13 rows (1 header + 12 forecast steps)
+Columns:   ARIMA (float), LSTM (float)
+
+ALL 12 STEPS:
+  Step  1: ARIMA=-0.6393  LSTM=-0.5741
+  Step  2: ARIMA=-0.6370  LSTM=-0.5624
+  Step  3: ARIMA=-0.6349  LSTM=-0.5468
+  Step  4: ARIMA=-0.6339  LSTM=-0.5340
+  Step  5: ARIMA=-0.6350  LSTM=-0.5253
+  Step  6: ARIMA=-0.6358  LSTM=-0.5200
+  Step  7: ARIMA=-0.6352  LSTM=-0.5169
+  Step  8: ARIMA=-0.6335  LSTM=-0.5150
+  Step  9: ARIMA=-0.6326  LSTM=-0.5140
+  Step 10: ARIMA=-0.6320  LSTM=-0.5133
+  Step 11: ARIMA=-0.6323  LSTM=-0.5127
+  Step 12: ARIMA=-0.6332  LSTM=-0.5123
+
+ARIMA(2,1,2) with AH3 exogenous regressor:
+  Mean=-0.6346  Std=0.0020  Range=[-0.6393, -0.6320]
+  -> Drops immediately to ~-0.63 and stays nearly constant. Conservative
+     extrapolation of the 2023-2024 downward trajectory.
+
+LSTM (3 features, 12-step window, 20 epochs, CUDA):
+  Trajectory: -0.5741 -> -0.5123 (+0.062 rise over 12 steps, monotonic)
+  Mean=-0.5289  Std=0.0203  Range=[-0.5741, -0.5123]
+  -> Gradual recovery from -0.57 toward -0.51. The LSTM learned that extreme
+     IAI spikes revert toward baseline, producing a recovery forecast that
+     contrasts with ARIMA's continued-decline forecast.
+
+TFT (Temporal Fusion Transformer, GPU, 5 epochs):
+  Collation bug fixed via dataset._collate_fn. Architecture: 18.1K params,
+  32 hidden, 2 attention heads, encoder=12, decoder=6. Produces real
+  predictions and attention weights (see TFT_attention.png).
+
+================================================================================
+FILE 3: Correlation_results.csv
+================================================================================
+Path:      results/Correlation_results.csv
+Format:    CSV, 8 rows (1 header + 7 data)
+Columns:   Comparison, Correlation, p-value, N
+
+ROW 1: IAI vs FluNet AH3 -- Pearson
+  r = -0.2288   p = 1.54e-05 (***)   N = 350
+
+ROW 2: IAI vs FluNet AH3 -- Spearman
+  rho = -0.4312   p = 2.79e-17 (***)   N = 350
+  -> Spearman is ~2x Pearson: monotonic but non-linear dose-response.
+
+ROWS 3-7: IAI vs H3N2 VE by age group x network (season-level, N=26 weeks each):
+  In these rows, "Correlation" = mean IAI during 2023-24 flu season (-0.4682),
+  "p-value" = VE point estimate (%). N = 26 weeks per row.
+  ROW 3: children, NVSN Outpatient      | mean IAI=-0.4682 | VE= 51%  [ 32,  64]
+  ROW 4: children, US Flu VE Outpatient | mean IAI=-0.4682 | VE= -5%  [-90,  43]
+  ROW 5: children, NVSN Inpatient       | mean IAI=-0.4682 | VE= 39%  [-18,  68]
+  ROW 6: all adults, US Flu VE Outpatient| mean IAI=-0.4682 | VE= 30%  [  5,  49]
+  ROW 7: all adults, IVY Inpatient       | mean IAI=-0.4682 | VE= 19%  [ -8,  39]
+  NOTE: Adults 18-64y and >=65y have no H3N2-specific VE in this dataset.
+  NOTE: VE is season-level (not weekly). Formal correlation with N=5 VE values
+        against N=26 IAI weeks is underpowered; values presented side-by-side.
+
+DOSE-RESPONSE (IAI quartile vs mean AH3, from merged FluNet data):
+  Q1 (IAI=-0.748): mean AH3=547, median AH3=114, n=88
+  Q2 (IAI=-0.555): mean AH3=290, median AH3= 83, n=87
+  Q3 (IAI=-0.384): mean AH3=228, median AH3= 82, n=87
+  Q4 (IAI=+0.185): mean AH3= 77, median AH3=  0, n=88
+  -> 7.1x difference Q1->Q4 in mean AH3. Median AH3 drops to ZERO in Q4.
+
+CROSS-CORRELATION (IAI vs AH3 at offsets):
+  IAI leads  4w: r=-0.2130    Synchronous: r=-0.2288    AH3 leads  4w: r=-0.2364
+  IAI leads  8w: r=-0.1972                              AH3 leads  8w: r=-0.2241
+  IAI leads 12w: r=-0.1795                              AH3 leads 12w: r=-0.2193
+  -> Peak at AH3->IAI lag 4 weeks (r=-0.236). Suggests flu circulation may
+     slightly lead immune ageing changes, though synchronous association
+     (r=-0.229) is nearly as strong.
+
+================================================================================
+FILE 4: IAI_values.csv -- Legacy (SUPERSEDED)
+================================================================================
+Path:      results/IAI_values.csv
+Format:    CSV, 112 rows (1 header + 111 data)
+Columns:   IAI (float, z-score), index (int 0-110)
+Status:    SUPERSEDED by IAI_time_series.csv. From v1 per-donor pipeline.
+Statistics: N=111, mean=0.0000, std=1.0000, min=-3.4717, max=+3.1964.
+Retained for reference only. Not used in current per-time-point analysis.
+
+================================================================================
+FILES 5-10: PLOTS (PNG)
+================================================================================
+
+IAI_distribution.png:
+  Histogram + KDE of 350 weekly IAI values. Dominant peak at -0.756 (69 wks,
+  2017-2019 baseline). Secondary mode near -0.55 (2023). Spike cluster at
+  +0.03-0.05 (late 2021). Extreme right tail with isolated peaks at +1.82,
+  +2.21, +3.04, +3.51 (Feb-Mar 2021). Skew=+3.96, Kurtosis=+25.93.
+
+Forecast_models.png:
+  Black=historical IAI (350 wks). Blue=ARIMA (drops to -0.64, flat).
+  Red=LSTM (rises -0.57->-0.51). Green=TFT (real, from trained model).
+  Four visible historical regimes: flat 2017-2019, spike 2020-2021,
+  decline 2022, gradual decline 2023-2024.
+
+LSTM_SHAP.png:
+  Permutation importance bar chart (36 features, 10 repeats). Baseline
+  MSE on unpermuted data. Top 15 features by MSE increase after permutation.
+  Features: 3 variables (IAI, AH3_norm, SPEC_norm) x 12 time lags (t-1..t-12).
+  Limitation: global ranking only, no sample-level explanations.
+
+TFT_attention.png:
+  Encoder attention heatmap from trained TFT (18.1K params, 5 epochs GPU).
+  Viridis colormap. Shows which past time steps the model attends to.
+  Collation bug resolved (dataset._collate_fn).
+
+IAI_vs_FluNet.png:
+  Scatter of 350 IAI vs AH3 values. Regression line (r=-0.23, p=1.54e-05).
+  All IAI>+0.5 points have AH3 near zero. Dense cluster at IAI=-0.76 with
+  AH3 0-3336. The 4 outlier points (IAI +1.8 to +3.5) all at AH3=0.
+
+IAI_vs_CDCVE.png:
+  26 IAI values (Oct23-Mar24) clustered at mean=-0.468 (std=0.050), blue.
+  5 horizontal VE reference lines with 95% CI bands, colored by age group:
+    Red:    children NVSN Outpatient      VE=51% [32,64]
+    Orange: children US Flu VE Outpatient VE=-5% [-90,43]
+    Green:  children NVSN Inpatient       VE=39% [-18,68]
+    Purple: all adults US Flu VE Outpatient VE=30% [5,49]
+    Brown:  all adults IVY Inpatient       VE=19% [-8,39]
+  IAI stable during season; VE varies widely (-5% to 51%) across strata.
+
+================================================================================
+11. KNOWN LIMITATIONS
+================================================================================
+1. EARLY CONSTANT VALUES: 69/350 weeks (19.7%) have identical IAI=-0.7561
+   because only 1 PBMC project exists before March 2019. Interpolation with
+   one anchor produces no variation.
+2. BATCH CORRECTION: Each project IS its own batch (24 projects, 24 batches).
+   ComBat requires >=2 observations per batch. Used across-project
+   standardization as the best available alternative. Batch effects are
+   confounded with temporal variation.
+3. CDC VE RESOLUTION: VE is season-level (single estimate per network per
+   age group for the entire 2023-24 season), not weekly. A formal time-series
+   IAI-VE correlation requires weekly VE data overlapping with IAI.
+4. PROJECT-DRIVEN VARIATION: IAI changes are driven mainly by which projects
+   are active, not by within-project temporal dynamics.
+5. MISSING AGE GROUPS: Adults 18-64y and >=65y have no H3N2-specific VE in
+   CDC_VE_2023_24_full.csv. Only Influenza B and Any Influenza available.
+6. PERMUTATION IMPORTANCE: Global feature ranking only. SHAP DeepExplainer
+   replaced due to tolerance bug (max diff 0.36 > tolerance 0.01 on LSTM).
+7. TFT: 18.1K parameters on 350 data points = proof-of-concept scale.
+
+================================================================================
+END OF RESULTS DESCRIPTION
+================================================================================
