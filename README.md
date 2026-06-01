@@ -50,7 +50,7 @@ The pipeline also reads `input_data/CDC_VE_rows.csv` (2025–26 weekly VE) if av
 
 ### Data Availability
 
-Two large files exceed GitHub's 100 MB limit and are hosted separately:
+Two large files exceed GitHub's 100 MB limit and are hosted on Zenodo:
 
 | File | Size | DOI |
 |------|------|-----|
@@ -58,7 +58,7 @@ Two large files exceed GitHub's 100 MB limit and are hosted separately:
 | `GTEx_v11_gene_tpm.gct.gz` | 2.5 GB | [10.5281/zenodo.20496692](https://doi.org/10.5281/zenodo.20496692) |
 
 **Complete dataset**: Zenodo DOI [10.5281/zenodo.20496692](https://doi.org/10.5281/zenodo.20496692).  
-**Code and small data files**: GitHub repository.
+**Code and small data files**: GitHub Release DOI [10.5281/zenodo.20497072](https://doi.org/10.5281/zenodo.20497072).
 
 To reproduce the full pipeline, download the two large files from Zenodo and place them in `input_data/`. All other files are included in this repository.
 
