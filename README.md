@@ -50,15 +50,12 @@ The pipeline also reads `input_data/CDC_VE_rows.csv` (2025–26 weekly VE) if av
 
 ### Data Availability
 
-Two large files exceed GitHub's 100 MB limit and are hosted on Zenodo:
+Large dataset files (exceeding GitHub's 100 MB limit) are hosted on Zenodo:
+- `pbmc_obs.csv` (2.9 GB) — https://doi.org/10.5281/zenodo.20496692
+- `GTEx_v11_gene_tpm.gct.gz` (2.5 GB) — https://doi.org/10.5281/zenodo.20496692
 
-| File | Size | DOI |
-|------|------|-----|
-| `pbmc_obs.csv` | 2.9 GB | [10.5281/zenodo.20496692](https://doi.org/10.5281/zenodo.20496692) |
-| `GTEx_v11_gene_tpm.gct.gz` | 2.5 GB | [10.5281/zenodo.20496692](https://doi.org/10.5281/zenodo.20496692) |
-
-**Large data files**: Zenodo DOI [10.5281/zenodo.20496692](https://doi.org/10.5281/zenodo.20496692) — contains only the two files above.  
-**Code and small data files**: GitHub Release DOI [10.5281/zenodo.20497072](https://doi.org/10.5281/zenodo.20497072).
+Code and small data files are archived in GitHub/Zenodo:
+[![DOI](https://zenodo.org/badge/DOI/CHANSingYeungSunny/IAI-analysis.svg)](https://zenodo.org/badge/latestdoi/CHANSingYeungSunny/IAI-analysis)
 
 To reproduce the full pipeline, download the two large files from Zenodo and place them in `input_data/`. All other files are included in this repository.
 
